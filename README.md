@@ -1,5 +1,12 @@
 # Criteo API Transition SDK for Java
 
+# Introduction
+API Client Libraries can facilitate your use of the Criteo API allowing you to build unique and customized solutions to serve your businesses and clients.
+These libraries can reduce the amount of code you need to write in order to start accessing Criteo programmatically. They also can help expedite troubleshooting, should you encounter any issues.
+This Transition SDK will help you migrate from MAPI to Criteo API. We will support it until end of 2021 when we will decommission the /legacy endpoints. After that date we will only support our official versioned Client Libraries available in Q3 2021.
+
+More information: [https://developers.criteo.com/marketing-solutions/docs/java-api-client-library](https://developers.criteo.com/marketing-solutions/docs/java-api-client-library)
+
 Criteo API Transition Swagger
 
 - API version: 2021-04
