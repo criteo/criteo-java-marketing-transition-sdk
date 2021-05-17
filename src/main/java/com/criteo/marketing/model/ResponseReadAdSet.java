@@ -36,7 +36,7 @@ import java.util.List;
 public class ResponseReadAdSet {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
-  private List<ReadModelReadAdSet> data = null;
+  private ReadModelReadAdSet data;
 
   public static final String SERIALIZED_NAME_WARNINGS = "warnings";
   @SerializedName(SERIALIZED_NAME_WARNINGS)
@@ -47,6 +47,12 @@ public class ResponseReadAdSet {
   private List<ProblemDetails> errors = null;
 
 
+  public ResponseReadAdSet data(ReadModelReadAdSet data) {
+    
+    this.data = data;
+    return this;
+  }
+
    /**
    * Get data
    * @return data
@@ -54,11 +60,15 @@ public class ResponseReadAdSet {
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public List<ReadModelReadAdSet> getData() {
+  public ReadModelReadAdSet getData() {
     return data;
   }
 
 
+
+  public void setData(ReadModelReadAdSet data) {
+    this.data = data;
+  }
 
 
    /**
