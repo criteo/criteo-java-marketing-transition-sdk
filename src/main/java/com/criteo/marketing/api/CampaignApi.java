@@ -38,6 +38,7 @@ import com.criteo.marketing.model.RequestsPatchAdSet;
 import com.criteo.marketing.model.ResponseAdSetId;
 import com.criteo.marketing.model.ResponseReadAdSet;
 import com.criteo.marketing.model.ResponsesAdSetId;
+import com.criteo.marketing.model.ResponsesReadAdSet;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -792,7 +793,7 @@ public class CampaignApi {
      * 
      * Search for ad sets
      * @param requestAdSetSearch  (optional)
-     * @return ResponseReadAdSet
+     * @return ResponsesReadAdSet
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -803,8 +804,8 @@ public class CampaignApi {
         <tr><td> 403 </td><td> Forbidden </td><td>  -  </td></tr>
      </table>
      */
-    public ResponseReadAdSet searchAdSets(RequestAdSetSearch requestAdSetSearch) throws ApiException {
-        ApiResponse<ResponseReadAdSet> localVarResp = searchAdSetsWithHttpInfo(requestAdSetSearch);
+    public ResponsesReadAdSet searchAdSets(RequestAdSetSearch requestAdSetSearch) throws ApiException {
+        ApiResponse<ResponsesReadAdSet> localVarResp = searchAdSetsWithHttpInfo(requestAdSetSearch);
         return localVarResp.getData();
     }
 
@@ -812,7 +813,7 @@ public class CampaignApi {
      * 
      * Search for ad sets
      * @param requestAdSetSearch  (optional)
-     * @return ApiResponse&lt;ResponseReadAdSet&gt;
+     * @return ApiResponse&lt;ResponsesReadAdSet&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -823,9 +824,9 @@ public class CampaignApi {
         <tr><td> 403 </td><td> Forbidden </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ResponseReadAdSet> searchAdSetsWithHttpInfo(RequestAdSetSearch requestAdSetSearch) throws ApiException {
+    public ApiResponse<ResponsesReadAdSet> searchAdSetsWithHttpInfo(RequestAdSetSearch requestAdSetSearch) throws ApiException {
         okhttp3.Call localVarCall = searchAdSetsValidateBeforeCall(requestAdSetSearch, null);
-        Type localVarReturnType = new TypeToken<ResponseReadAdSet>(){}.getType();
+        Type localVarReturnType = new TypeToken<ResponsesReadAdSet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -845,10 +846,10 @@ public class CampaignApi {
         <tr><td> 403 </td><td> Forbidden </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call searchAdSetsAsync(RequestAdSetSearch requestAdSetSearch, final ApiCallback<ResponseReadAdSet> _callback) throws ApiException {
+    public okhttp3.Call searchAdSetsAsync(RequestAdSetSearch requestAdSetSearch, final ApiCallback<ResponsesReadAdSet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = searchAdSetsValidateBeforeCall(requestAdSetSearch, _callback);
-        Type localVarReturnType = new TypeToken<ResponseReadAdSet>(){}.getType();
+        Type localVarReturnType = new TypeToken<ResponsesReadAdSet>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

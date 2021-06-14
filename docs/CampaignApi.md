@@ -384,7 +384,7 @@ Name | Type | Description  | Notes
 
 <a name="searchAdSets"></a>
 # **searchAdSets**
-> ResponseReadAdSet searchAdSets(requestAdSetSearch)
+> ResponsesReadAdSet searchAdSets(requestAdSetSearch)
 
 
 
@@ -412,7 +412,7 @@ public class Example {
     CampaignApi apiInstance = new CampaignApi(defaultClient);
     RequestAdSetSearch requestAdSetSearch = new RequestAdSetSearch(); // RequestAdSetSearch | 
     try {
-      ResponseReadAdSet result = apiInstance.searchAdSets(requestAdSetSearch);
+      ResponsesReadAdSet result = apiInstance.searchAdSets(requestAdSetSearch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CampaignApi#searchAdSets");
@@ -433,7 +433,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ResponseReadAdSet**](ResponseReadAdSet.md)
+[**ResponsesReadAdSet**](ResponsesReadAdSet.md)
 
 ### Authorization
 
