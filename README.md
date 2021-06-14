@@ -185,6 +185,7 @@ Class | Method | HTTP request | Description
  - [ResponseAdSetId](docs/ResponseAdSetId.md)
  - [ResponseReadAdSet](docs/ResponseReadAdSet.md)
  - [ResponsesAdSetId](docs/ResponsesAdSetId.md)
+ - [ResponsesReadAdSet](docs/ResponsesReadAdSet.md)
  - [StatisticsReportQueryMessage](docs/StatisticsReportQueryMessage.md)
  - [TransactionsReportQueryDataMessage](docs/TransactionsReportQueryDataMessage.md)
  - [TransactionsReportQueryEntityMessage](docs/TransactionsReportQueryEntityMessage.md)
