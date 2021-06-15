@@ -5,7 +5,7 @@
     <artifactId>api-transition.java-client</artifactId>
     <packaging>jar</packaging>
     <name>api-transition.java-client</name>
-    <version>2021-04.0</version>
+    <version>1.0.3</version>
     <url>https://github.com/criteo/criteo-java-marketing-transition-sdk</url>
     <description>Criteo API Transition SDK for Java</description>
     <scm>
