@@ -1,3 +1,8 @@
+# This project is deprecated
+We've built a new set of SDKs to help you use our [Criteo's API](https://developers.criteo.com/).
+
+You can find the new Java SDKs repository here : https://github.com/criteo/criteo-api-java-sdk
+
 # Criteo API Transition SDK for Java
 
 ## Introduction
